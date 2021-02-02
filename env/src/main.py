@@ -131,8 +131,6 @@ if __name__ == "__main__":
                 webbrowser.get(chrome_path).open("geeksforgeeks.org")
                 
             elif 'vs code' in query or 'visual studio code' in query or 'vscode' in query or 'code' in query:
-                # app_path = "C:\\Users\\saini\\AppData\\Local\\Programs\\Microsoft VSC\\Code.exe"
-                # os.startfile(app_path)
                 os.system('code')
             
             elif 'notepad' in query:
@@ -148,8 +146,7 @@ if __name__ == "__main__":
             get_date = getDate()
             response = response +' '+get_date
             speak(response)
-
-        # Check is user said about time
+            
         elif 'time' in query:
             get_time = getTime()
             response = response +' '+get_time
